@@ -12,16 +12,22 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
+		.text-container {
+			position: absolute;
+			top: 60%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
 		.text {
 			display: block;
-			text-align: center;
 			color: #dc6e6e;
 			font-size: 20px;
 			margin-top: 10px;
 			font-family: Arial, sans-serif;
 			letter-spacing: 2px;
 			transition: color 0.3s ease-in-out;
-			cursor: pointer; /* add a pointer cursor when hovering over the text */
+			cursor: pointer;
 		}
 		.text:first-child {
 			margin-bottom: 5px;
@@ -33,7 +39,9 @@
 </head>
 <body>
 	<img src="ef5dd1b4a16246237626585d9c36b485.png" alt="Logo" class="logo">
-	<a href="https://discord.gg/Cyh67dXWDZ" target="_blank"><span class="text">Discord</span></a>
-	<a href="https://example.com/purchase" target="_blank"><span class="text">Purchase</span></a>
+	<div class="text-container">
+		<a href="https://discord.gg/Cyh67dXWDZ" target="_blank"><span class="text">Discord</span></a>
+		<a href="https://example.com/purchase" target="_blank"><span class="text">Purchase</span></a>
+	</div>
 </body>
 </html>
